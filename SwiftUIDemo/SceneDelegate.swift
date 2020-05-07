@@ -9,12 +9,19 @@
 import UIKit
 import SwiftUI
 
+// 현재 세션과 연결되는 새로운 화면 객체, 백, 포그라운드 간의 화면 전환,
+// 앱에서 연결이 끊긴 화면과 같은 이벤트를 처리하는 메소드 포함.
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
 
+    /* willConectTo
+     ContentView.swift 파일에 선언된 ContentView뷰의 인스턴스를 생성, 사용자에게 보이도록 함.
+     새로운 화면 객체가 앱에 추가될 때마다 호출되는 메소드.
+     */
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
