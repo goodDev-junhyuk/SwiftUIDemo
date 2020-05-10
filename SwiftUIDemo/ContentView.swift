@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     
     var colors: [Color] = [.black, .red, .green, .blue]
-    var colorNames = ["Black, Red, Green", "Blue"]
+    var colorNames = ["Black", "Red", "Green", "Blue"]
     
     @State private var colorIndex = 0
     @State private var rotation: Double = 0
